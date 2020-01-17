@@ -1,0 +1,7 @@
+s = 'zhY5WU3MEonJ7wGazellavQNetBTwQSG7O6yVBTjKyzlHHcx6Zmg4RmjgzXPnAejHu3EYEjawFQzDhXMIg7PDzKhHqDMsRcOP6o5FkUo6tzttNjxqqrEl2txTIhFXlEa425va7qpzNRi6B0ApallidusHVCBX9LCduTpM4TJ0.'
+a = 14
+b = 20
+c = 144
+d = 151
+
+print(s[a:b+1] + ' ' + s[c:d+1])

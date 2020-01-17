@@ -1,0 +1,14 @@
+numMonths = 28
+pairsMade = 4
+iniPairs = 1
+currentPairs = 1
+adultPairs = 0
+currMonth = 1
+while currMonth <= numMonths:
+    babies = adultPairs * pairsMade
+    if adultPairs > 0:
+        currentPairs = currentPairs + adultPairs * pairsMade
+    adultPairs = currentPairs - babies
+    currMonth += 1
+    print adultPairs
+    

@@ -1,0 +1,27 @@
+f = open("test.txt", "r")
+samples = {}
+highestGC = 0
+user = ""
+for line in f.readlines():
+    if ">" in line:
+        key = line.strip('\n')
+        key = key.strip('>')
+        value = ""
+    else:
+        value += line.strip('\n') 
+        samples[key] = value
+    
+for key in samples:
+    total = len(samples[key])
+    count = 0
+    for letter in samples[key]:
+        if letter == 'C' or letter == 'G':
+            count += 1
+    gc = float(count * 100.0 / total)
+    if gc > highestGC:
+        user = key
+        highestGC = gc
+
+print user
+print highestGC
+f.close()
