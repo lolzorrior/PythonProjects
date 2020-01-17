@@ -1,0 +1,12 @@
+f = open('mutate.txt', 'r')
+input1 = f.readline()
+input2 = f.readline()
+count = 0
+pos = 0
+while pos < len(input1) - 1:
+    if input1[pos] != input2[pos]:
+        count += 1
+    pos += 1
+
+print count
+f.close()
